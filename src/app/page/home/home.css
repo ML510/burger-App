@@ -8,15 +8,34 @@
 #mainTitelB, #mainTitelS {
     font-size: 100px;
     font-style: oblique;
-    padding: 0;   /* ❗ remove padding */
+    padding: 0; 
     margin: 0;
-    line-height: 1;  /* ❗ important */
-}
-
-#mainTitelB {
+    line-height: 1;
     color: #FFB33F;
 }
 
 #mainTitelS {
+    font-size: 100px;
+    font-style: oblique;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
     color: #000;
+}
+
+
+.main-title {
+    font-size: 80px;
+    color: #FFD150;
+    font-weight: 900;
+    height: 60px;
+}
+
+.sub-title {
+    font-size: 32px;
+    color: white;
+    /* margin-left: 74px;
+    padding-top: 20px; */
+    font-weight: 600;
+
 }
