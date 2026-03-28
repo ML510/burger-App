@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Hurricane&family=Lilita+One&family=Oswald:wght@200..700&display=swap');
+
+
+.img-fluid{
+    height: 200px;
+}
+
+#mainTitelB, #mainTitelS {
+    font-size: 100px;
+    font-style: oblique;
+    padding: 0;   /* ❗ remove padding */
+    margin: 0;
+    line-height: 1;  /* ❗ important */
+}
+
+#mainTitelB {
+    color: #FFB33F;
+}
+
+#mainTitelS {
+    color: #000;
+}
