@@ -12,6 +12,7 @@ import * as AOS from 'aos';
 export class Home implements AfterViewInit {
 
   @ViewChild('myVideo') video!: ElementRef;
+  @ViewChild('burgerVideo') burgerVideo!: ElementRef;
   @ViewChild('typingText') typingText!: ElementRef;
   ngAfterViewInit() {
     this.playMutedVideo();
@@ -41,7 +42,6 @@ export class Home implements AfterViewInit {
                     creativity, and a dash of Sri Lankan charm.`],
       typeSpeed: 20,
       backSpeed: 80,
-      backDelay: 1000,
       loop: true
     };
 
@@ -52,6 +52,10 @@ export class Home implements AfterViewInit {
     setTimeout(() => {
       this.video.nativeElement.muted = true;
       this.video?.nativeElement?.play();
+      if (this.burgerVideo) {
+        this.burgerVideo.nativeElement.muted = true;
+        this.burgerVideo.nativeElement.play();
+      }
     }, 0);
   }
 
