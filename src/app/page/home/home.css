@@ -1,54 +1,106 @@
+/* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Hurricane&family=Lilita+One&display=swap');
 
-.img-fluid{
-    height: 200px;
+/* Image */
+.img-fluid {
+  height: 120px;
 }
 
-#mainTitelB, #mainTitelS {
-    font-size: 100px;
-    font-style: oblique;
-    padding: 0; 
-    margin: 0;
-    line-height: 1;
-    color: #FFB33F;
+@media (min-width: 640px) {
+  .img-fluid {
+    height: 160px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .img-fluid {
+    height: 200px;
+  }
+}
+
+/* Main Titles */
+#mainTitelB,
+#mainTitelS {
+  font-style: oblique;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+  font-size: 40px;
+}
+
+#mainTitelB {
+  color: #FFB33F;
 }
 
 #mainTitelS {
+  color: white;
+}
+
+/* Tablet */
+@media (min-width: 640px) {
+  #mainTitelB,
+  #mainTitelS {
+    font-size: 70px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  #mainTitelB,
+  #mainTitelS {
     font-size: 100px;
-    font-style: oblique;
-    padding: 0;
-    margin: 0;
-    line-height: 1;
-    color: white
+  }
 }
 
-
+/* Main Title (Carousel text) */
 .main-title {
-    font-size: 80px;
-    color: #FFD150;
-    font-weight: 900;
-    height: 60px;
+  font-size: 28px;
+  color: #FFD150;
+  font-weight: 900;
 }
 
+/* Tablet */
+@media (min-width: 640px) {
+  .main-title {
+    font-size: 45px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .main-title {
+    font-size: 60px;
+  }
+}
+
+/* Sub Title */
 .sub-title {
-    font-size: 32px;
-    color: white;
-    /* margin-left: 74px;
-    padding-top: 20px; */
-    font-weight: 600;
-
+  font-size: 16px;
+  color: white;
+  font-weight: 600;
 }
 
+/* Tablet */
+@media (min-width: 640px) {
+  .sub-title {
+    font-size: 24px;
+  }
+}
 
+/* Desktop */
+@media (min-width: 1024px) {
+  .sub-title {
+    font-size: 32px;
+  }
+}
+
+/* Fonts */
 .lilita-one-regular {
   font-family: "Lilita One", sans-serif;
   font-weight: 400;
-  font-style: normal;
 }
 
 .hurricane-regular {
   font-family: "Hurricane", cursive;
   font-weight: 400;
-  font-style: normal;
 }
-
