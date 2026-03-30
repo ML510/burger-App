@@ -1,142 +1,132 @@
 <div class="bg-[url('/assets/image/home_page.jpg')] bg-cover bg-center">
 
-
-
-    <div class="justify-content-start">
-        <img src="assets/image/finalImage.png" class="img-fluid" alt="">
+    <!-- Top Image -->
+    <div class="flex justify-start">
+        <img src="assets/image/finalImage.png" class="w-[150px] sm:w-[200px] md:w-[250px]" alt="">
     </div>
 
-    <div class="flex justify-center items-center gap-7">
-        <h1 id="mainTitelB" data-aos="fade-right" class="leading-none">Burgers</h1>
-        <h1 id="mainTitelS" data-aos="fade-left" class="leading-none">Shop</h1>
+    <!-- Title -->
+    <div class="flex justify-center items-center gap-3 sm:gap-7 text-center">
+        <h1 data-aos="fade-right" class="leading-none text-3xl sm:text-5xl md:text-7xl">
+            Burgers
+        </h1>
+        <h1 data-aos="fade-left" class="leading-none text-3xl sm:text-5xl md:text-7xl">
+            Shop
+        </h1>
     </div>
 
+    <!-- Carousel + Video Section -->
+    <div class="flex flex-col md:flex-row mt-12 gap-6">
 
-    <div class="flex mt-12">
-
-        <!-- --------------------------- -->
-        <div class="w-1/2 flex justify-start">
-
+        <!-- Carousel -->
+        <div class="w-full md:w-1/2">
             <div id="default-carousel" class="relative w-full" data-carousel="slide">
 
-                <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                <div class="relative h-[200px] sm:h-[300px] md:h-[400px] overflow-hidden rounded-lg">
 
-                    <!-- Slide 1 -->
                     <div class="duration-700 ease-in" data-carousel-item="active">
                         <div class="flex items-center justify-center h-full">
-                            <p class="main-title">Order Now</p>
+                            <p class="text-xl sm:text-3xl md:text-5xl">Order Now</p>
                         </div>
                     </div>
 
-                    <!-- Slide 2 -->
                     <div class="hidden duration-700 ease-in" data-carousel-item>
-                        <div class="flex flex-col justify-center h-full px-10">
-                            <h1 class="main-title ml-16">BURGERS</h1>
-                            <h1 class="main-title ml-16">REINVENTED</h1>
-                            <h3 class="sub-title ml-17 mt-12 mb-0 leading-2">WHERE FLAVOUR RULES ON EVERY</h3>
-                            <h3 class="sub-title ml-17 mt-0 mb-0">DIMENSION</h3>
+                        <div class="flex flex-col justify-center h-full px-6">
+                            <h1 class="text-2xl sm:text-4xl">BURGERS</h1>
+                            <h1 class="text-2xl sm:text-4xl">REINVENTED</h1>
                         </div>
                     </div>
 
-                    <!-- Slide 3 -->
                     <div class="hidden duration-700 ease-in" data-carousel-item>
-                        <div class="flex flex-col justify-center h-full px-10">
-                            <h1 class="main-title ml-16">SRI LANKA'S</h1>
-                            <h1 class="main-title ml-16">ORIGINAL</h1>
-                            <h1 class="main-title ml-16">GOURMET</h1>
-                            <h1 class="main-title ml-16">BURGER</h1>
-                            <h3 class="sub-title ml-17 mt-9 mb-0">BURGER INNOVATION AT ITS FINEST</h3>
+                        <div class="flex flex-col justify-center h-full px-6">
+                            <h1 class="text-2xl sm:text-4xl">SRI LANKA'S</h1>
+                            <h1 class="text-2xl sm:text-4xl">GOURMET BURGER</h1>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
-        <!-- - --------------------------- -->
-        <div class="w-full md:w-1/2 flex items-center justify-center md:justify-end">
-            <video class="w-full max-w-[750px]" autoplay muted loop playsinline #myVideo>
+
+        <!-- Video -->
+        <div class="w-full md:w-1/2 flex justify-center">
+            <video class="w-full max-w-[600px] rounded-lg"
+                   autoplay muted loop playsinline>
                 <source src="assets/video/video01.mp4" type="video/mp4">
             </video>
         </div>
+
     </div>
 
+    <!-- WHAT WE DO Section -->
+    <div class="w-full max-w-[1200px] mx-auto bg-[#FCB404] rounded-[30px] p-6 mt-10">
 
-    <div class="w-full max-w-[1410px] mx-auto bg-[#FCB404] rounded-[60px] p-6 mb-5">
-        <!-- Top Section -->
-        <div class="flex flex-col md:flex-row">
-            <!-- Left -->
-            <div class="w-full md:w-1/2 flex items-start lilita-one-regular">
-                <h4 class="text-[32px] mt-20" data-aos="zoom-in">
+        <div class="flex flex-col md:flex-row gap-6">
+
+            <div class="w-full md:w-1/2">
+                <h4 class="text-2xl md:text-3xl" data-aos="zoom-in">
                     WHAT WE DO
                 </h4>
             </div>
-            <!-- Right -->
-            <div class="w-full md:w-1/2 lilita-one-regular mb-0 pb-0 lilita-one-regular">
-                <h3 class="text-2xl md:text-3xl font-bold">
+
+            <div class="w-full md:w-1/2">
+                <h3 class="lilita-one-regular text-xl md:text-2xl font-bold">
                     Shifting the Gear on Traditional Burgers
                 </h3>
-                <h3 class="text-2xl md:text-3xl font-bold">
-                    Traditional Burgers
-                </h3>
             </div>
+
         </div>
 
-        <!-- Bottom Section -->
-        <div class="flex flex-col md:flex-row mt-10">
-            <!-- Image -->
+        <div class="flex flex-col md:flex-row mt-8 gap-6">
+
             <div class="w-full md:w-1/2 flex justify-center" data-aos="flip-left">
-                <img src="assets/image/Corser.png" class="w-full max-w-[600px] md:ml-14" alt="burger">
+                <img src="assets/image/Corser.png"
+                     class="w-full max-w-[400px]" alt="burger">
             </div>
-            <!-- Text -->
-            <div class="md:w-1/2 mt-0 pt-0 hurricane-regular">
+
+            <div class="w-full md:w-1/2">
                 <p>
-                    <span #typingText style="font-size: 30px;"></span>
+                    <span #typingText class="text-lg md:text-xl"></span>
                 </p>
             </div>
+
         </div>
     </div>
 
+    <!-- Cards Section -->
+    <div class="max-w-[1200px] mx-auto mt-12 px-4">
 
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
 
-    <div class="flex m-20 gap-lg-50 gap-40">
+            <!-- Card -->
+            <div class="bg-neutral-primary-soft rounded-xl overflow-hidden shadow-lg hover:scale-105 transition">
 
-        <div class="w-1/4">
-            <div class="bg-neutral-primary-soft w-75 rounded-t-base">
-                <div>
-                    <video class="itemVideo w-full rounded-t-base" autoplay muted loop playsinline volume="0" #burgerVideo>
+                <div class="h-[200px] sm:h-[250px] md:h-[300px]">
+                    <video class="w-full h-full object-cover"
+                           autoplay muted loop playsinline>
                         <source src="assets/video/burger01.mp4" type="video/mp4">
                     </video>
                 </div>
-                <div class="p-6 text-center bg-black rounded-b-base">
-                    <h3 class="mt-3 mb-6 text-2xl font-semibold tracking-tight text-[#ffffff]">Burgers</h3>
-                    <a href="" class="lilita-one-regular bg-[#efb400] text-[#000000] py-2 px-4 rounded-md">View List</a>
-                </div>
-            </div>
-        </div>
 
-        <div class="w-1/4">
-            <div class="bg-neutral-primary-soft w-75 rounded-t-base">
-                <div>
-                    <video class="itemVideo w-full rounded-t-base" autoplay muted loop playsinline volume="0" #burgerVideo>
-                        <source src="assets/video/submerin01.mp4" type="video/mp4">
-                    </video>
+                <div class="p-4 text-center bg-black">
+                    <h3 class="text-white text-lg sm:text-xl font-semibold">
+                        Burgers
+                    </h3>
+                    <a href=""
+                       class="mt-3 inline-block bg-[#efb400] text-black py-2 px-4 rounded-md">
+                        View List
+                    </a>
                 </div>
-                <div class="p-6 text-center bg-black rounded-b-base">
-                    <h3 class="mt-3 mb-6 text-2xl font-semibold tracking-tight text-[#ffffff]">Burgers</h3>
-                    <a href="" class="lilita-one-regular bg-[#efb400] text-[#000000] py-2 px-4 rounded-md">View List</a>
-                </div>
+
             </div>
 
-        </div>
+            <!-- duplicate cards -->
+            <div class="bg-neutral-primary-soft rounded-xl h-[300px]"></div>
+            <div class="bg-neutral-primary-soft rounded-xl h-[300px]"></div>
+            <div class="bg-neutral-primary-soft rounded-xl h-[300px]"></div>
 
-        <div class="w-1/4">
-            
         </div>
 
     </div>
-
-
-
-
-
 
 </div>
